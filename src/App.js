@@ -11,7 +11,7 @@ function App() {
   let apiKey = `${process.env.REACT_APP_API_KEY}`
 
   useEffect(() => {
-    let url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=yes`
+    let url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=yes`
 
     const fetchData = async ()=>{
       try {
